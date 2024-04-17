@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ліцей</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./icon.ico" type="image/x-icon">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .top-bar {
+        background-color: #333;
+        margin-bottom: 0;
+        /* dark gray background */
+        color: #fff;
+        /* text color */
+        padding: 30px 20px;
+        /* adjust padding as needed */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* optional: adds a subtle shadow */
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .top-bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /* Use flexbox to make the items horizontal */
+        text-align: right;
+    }
+
+    .top-bar li {
+        margin-right: 20px;
+        /* adjust spacing between links */
+
+    }
+
+    .top-bar a {
+        color: #fff;
+        text-decoration: none;
+        float: right;
+    }
+
+    .top-bar div {
+        align-self: self-end;
+    }
+
+    .right-aligned-nav {
+        display: grid;
+    }
+
+    .container {
+        position: relative;
+        animation: fadeIn 2s ease forwards;
+        margin-bottom: 400px;
+    }
+
+    .centered-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grade-header {
+        text-align: center;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: white;
+        font-size: 70px;
+        padding-bottom: 50px;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .animatedImg {
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .line {
+        border-top: 5px solid black; /* Adjust thickness and color as needed */
+        width: 100%;
+        margin-top: 20px; /* Adjust margin as needed */
+    }
+
+    .container p {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .image-overlay-main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        padding-bottom: 80em;
+        width: 100%;
+        height: 1;
+        background-image: url('./Images/Main.png');
+        /* Replace 'your-image-url.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .image-overlay-projects {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        padding-bottom: 250px;
+        width: 100%;
+        height: 100px;
+        background-image: url('./Images/Projects.png');
+        /* Replace 'your-image-url.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .image-overlay-class {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        padding-bottom: 250px;
+        width: 100%;
+        height: 100px;
+        background-image: url('./Images/Class.png');
+        /* Replace 'your-image-url.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .image-overlay-lyceum {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        padding-bottom: 250px;
+        width: 100%;
+        height: 100px;
+        background-image: url('./Images/Lyceum.jpg');
+        /* Replace 'your-image-url.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .discription-paragraph{
+        width: 50%;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+    <main>
+        <nav class="top-bar">
+            <div>
+                <ul>
+                    <li><a href="./index.html">Моя веб-сторінка</a></li>
+                    <li>
+                        <ul class="right-aligned-nav">
+                            <li><a href="./lyceum.html">Ліцей</a></li>
+                            <li><a href="./class.html">Мій клас</a></li>
+                            <li><a href="./projects.html">Мої проєкти</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="image-overlay-lyceum">
+                <h1>Ліцей</h1>
+                <p>Ця веб-сторінка містить цікаві фотографії заходів, які відбувалися в ДОЛІФМП</p>
+            </div>
+        </div>
+        <div> 
+            <div class="line"></div>
+            <div> 
+                <h1 class="grade-header">Лабораторні роботи</h1>
+                <div class="centered-container">
+                    <img class=".animatedImg" src="./Images/lyceum-1.jpg" alt="" width="800em">
+                </div>
+            </div>
+            <div class="line"></div>
+            <div> 
+                <h1 class="grade-header">Мат регата</h1>
+                <div class="centered-container">
+                    <img class=".animatedImg" src="./Images/lyceum-2.jpg" alt="" width="800em">
+                </div>
+            </div>
+            <div class="line"></div>
+            <div> 
+                <h1 class="grade-header">Поїздка до пансіонату "Лісний"</h1>
+                <div class="centered-container">
+                    <img class=".animatedImg" src="./Images/lyceum-3.jpg" alt="" width="800em">
+                </div>
+            </div>
+            <div class="line"></div>
+            <div> 
+                <h1 class="grade-header">Спортивні змагання</h1>
+                <div class="centered-container">
+                    <img class=".animatedImg" src="./Images/lyceum-4.jpg" alt="" width="800em">
+                </div>
+            </div>
+            <div class="line"></div>
+            <div> 
+                <h1 class="grade-header">Екскурсії</h1>
+                <div class="centered-container">
+                    <img class=".animatedImg" src="./Images/lyceum-5.jpg" alt="" width="800em">
+                </div>
+            </div>
+            <div class="line"></div>
+            <div> 
+                <h1 class="grade-header">Відвідування вищих закладів освіти</h1>
+                <div class="centered-container">
+                    <img class=".animatedImg" src="./Images/lyceum-6.jpg" alt="" width="800em">
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мої проєкти</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./icon.ico" type="image/x-icon">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .top-bar {
+        background-color: #333;
+        margin-bottom: 0;
+        /* dark gray background */
+        color: #fff;
+        /* text color */
+        padding: 30px 20px;
+        /* adjust padding as needed */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* optional: adds a subtle shadow */
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .top-bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /* Use flexbox to make the items horizontal */
+        text-align: right;
+    }
+
+    .top-bar li {
+        margin-right: 20px;
+        /* adjust spacing between links */
+
+    }
+
+    .top-bar a {
+        color: #fff;
+        text-decoration: none;
+        float: right;
+    }
+
+    .top-bar div {
+        align-self: self-end;
+    }
+
+    .right-aligned-nav {
+        display: grid;
+    }
+
+    .container {
+        position: relative;
+        animation: fadeIn 2s ease forwards;
+        margin-bottom: 400px;
+    }
+
+    .centered-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grade-header {
+        text-align: center;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: white;
+        font-size: 70px;
+        padding-bottom: 50px;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .animatedImg {
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .line {
+        border-top: 5px solid black; /* Adjust thickness and color as needed */
+        width: 100%;
+        margin-top: 0px; /* Adjust margin as needed */
+    }
+
+    .container p {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .image-overlay-main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        padding-bottom: 80em;
+        width: 100%;
+        height: 1;
+        background-image: url('./Images/Main.png');
+        /* Replace 'your-image-url.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .image-overlay-projects {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        padding-bottom: 250px;
+        width: 100%;
+        height: 100px;
+        background-image: url('./Images/Projects.png');
+        /* Replace 'your-image-url.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        animation: fadeIn 2s ease forwards;
+    }
+    .discription-paragraph{
+        width: 50%;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+    <main>
+        <nav class="top-bar">
+            <div>
+                <ul>
+                    <li><a href="./index.html">Моя веб-сторінка</a></li>
+                    <li>
+                        <ul class="right-aligned-nav">
+                            <li><a href="./lyceum.html">Ліцей</a></li>
+                            <li><a href="./class.html">Мій клас</a></li>
+                            <li><a href="./projects.html">Мої проєкти</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="image-overlay-projects">
+                <h1>Мої проєкти</h1>
+                <p>Ця веб-сторінка містить інформацію про мої проєкти, які я вважаю ключовими</p>
+            </div>
+        </div>
+        <div> 
+            <div class="line"></div>
+            <div> 
+                <h1 class="grade-header">8 клас</h1>
+                <div class="centered-container">
+                    <h2>Medieval Game</h2>
+                    <img class=".animatedImg" src="./Images/Projects-Medevial.png" alt="" width="800em">
+                    <p class="discription-paragraph">Medevial game - це мій самий перший проєкт як розробника, гра-бродилка з досить складними перешкодами, вона стала моїм першим досвідому програмуванні, а створювалась вона на курсах, з  підтримкою куратора. Робота йшла на МАН, але не пройшла ліцейський тур</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <h1 class="grade-header">9 клас</h1>
+            <div class="centered-container">
+                <h2>WeatherProject</h2>
+                <img class=".animatedImg" src="./Images/Projects-WeatherApp.png" alt="" width="800em">
+                <p class="discription-paragraph">Проект який почався як практика роботи з API, та розробки першого застосунку, а не гри. Додаток звертався до сервісу, що надає дані о погоді в конкретному регіоні, та змінював тло робочого стола в залежності від погодних умов в місті, де знаходиться користувач. Робота захищалась на обласному турі, але не посіла призовго місця</p>
+            </div>
+            <div class="centered-container">
+                <h2>CSMoment</h2>
+                <img class=".animatedImg" src="./Images/Projects-CSmoment.png" alt="" width="800em">
+                <p class="discription-paragraph">Змонтоване відео високої якості, яке пародіювало дуже популярний момент кіберспортивної сцени, але в цьому випадку було взято момент мого друга з тієї самої гри</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div> 
+            <h1 class="grade-header">10 клас</h1>
+            <div class="centered-container">
+                <h2>MineSweeperOnline</h2>
+                <img class=".animatedImg" src="./Images/Projects-MineSweeper.png" alt="" width="800em">
+                <p class="discription-paragraph">MineSweeperOnline - буквально звичайний сапер, який перенесено в 3д простір, з великою нових графічних елементів, але основною фішкою є онлайн функції, тобто можна грати з друзями. Я отримав дуже багато досвіду працюючи з реалізацією онлайн функцій, синхронізації, шейдерів та інших важких тем й досі розробляю цей проект і хочу його довести до рівня продукту. </p>
+            </div>
+            <div class="centered-container">
+                <h2>New Year render</h2>
+                <img class=".animatedImg" src="./Images/Projects-NewYearRender.png" alt="" width="800em">
+                <p class="discription-paragraph">В дев'ятому класі, я почав вивчати 3д моделювання як хоббі, як ітог піврічного вивчення, я зробив просте відео на 5 секунд з анімацією новорічного шара, з кумедним малюнокм на ньому, це дуже сподобалось моїм друзям. В кінці ж 10 класу, я вирішив зробити інше відео, на противагу минулорічному, воно мало 10 вискок деталізованих сцен, які зображували фотографії моїх друзів у новорічній обстановці, посилаючісь на жарти, які ми використовули за рік. Рендер відео (Розрахунок комп'ютером світла у сцені для кожного кадру), зайняв понад 70 годин, тривалість відео 1 хв 30 секунд.</p>
+            </div>
+            <div class="centered-container">
+                <h2>ScreenshotProject</h2>
+                <img class=".animatedImg" src="./Images/Projects-ScreenshotProject.png" alt="" width="800em">
+                <p class="discription-paragraph">Після оновлення моєї системи до Windows 11, я стикнувся з проблемами, щодо стоврення скріншотів екрану, я отримував помилку, через яку не міг створити сріншот певної зони екрану, тому я вирішив розробити власне рішення цієї задачі, розробивши додаток, що дозволяє моментально робити скріншот, наносити зміни, копіювати та зберігати. Проєкт посів 2 місце обласного туру МАН</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div> 
+            <h1 class="grade-header">11 клас</h1>
+            <div class="centered-container">
+                <h2>CatComedy</h2>
+                <img class=".animatedImg" src="./Images/Projects-CatComedy.png" alt="" width="800em">
+                <p class="discription-paragraph">CatComedy, це гра яка створювалась спеціально для заходу Global Game Jam Ukraine 2023, гра розроблялась у команді з 3 людей всього за 7 днів, в мої обов'язки входило програмування та керування командою, яка закривала аудіо та відео частини гри. Містить 4 різних рівні з різними задачами, артом, музикою. Темою заходу джема була Make me laugh, наш проєкт зайняв 10/73 місце </p>
+            </div>
+            <div class="centered-container">
+                <h2>LOCUSAPP</h2>
+                <img class=".animatedImg" src="./Images/Projects-LocusApp.png" alt="" width="800em">
+                <p class="discription-paragraph">Серйозний застосунок, який було створено за запитоми моєї матері, вона стосується оптимізації її роботи, тобто роботи суд-мед експертизи, конкретно індентифіцкації фрагментів тіла. Раніше я намагався допомогти їх налаштовувавши таблиці Excel, це не зв'явилось у нагоді, але зараз я зміг розробити повноцінний додаток, з правильною реалізацією. Проєкт здобув перемогу на обласному турі МАН, та йде далі на всеукраїнський тур.</p>
+            </div>
+        </div>
+        
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Моя веб-сторінка</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./icon.ico" type="image/x-icon">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .top-bar {
+        background-color: #333;
+        margin-bottom: 0;
+        /* dark gray background */
+        color: #fff;
+        /* text color */
+        padding: 30px 20px;
+        /* adjust padding as needed */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* optional: adds a subtle shadow */
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .top-bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /* Use flexbox to make the items horizontal */
+        text-align: right;
+    }
+
+    .top-bar li {
+        margin-right: 20px;
+        /* adjust spacing between links */
+
+    }
+
+    .top-bar a {
+        color: #fff;
+        text-decoration: none;
+        float: right;
+    }
+
+    .top-bar div {
+        align-self: self-end;
+    }
+
+    .right-aligned-nav {
+        display: grid;
+    }
+
+    .container {
+        position: relative;
+        animation: fadeIn 2s ease forwards;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: white;
+        font-size: 70px;
+        padding-bottom: 50px;
+        animation: fadeIn 2s ease forwards;
+    }
+    .container p {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        animation: fadeIn 2s ease forwards;
+    }
+    .image-overlay-main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        padding-bottom: 80em;
+        width: 100%;
+        height: 100%;
+        background-image: url('./Images/Main.png'); /* Replace 'your-image-url.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        animation: fadeIn 2s ease forwards;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+    <main>
+        <nav class="top-bar">
+            <div>
+                <ul>
+                    <li><a href="./index.html">Моя веб-сторінка</a></li>
+                    <li>
+                        <ul class="right-aligned-nav">
+                            <li><a href="./lyceum.html">Ліцей</a></li>
+                            <li><a href="./class.html">Мій клас</a></li>
+                            <li><a href="./projects.html">Мої проєкти</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            
+            <div class="image-overlay-main">
+                <h1>Моя веб-сторінка</h1>
+                <p>Ця веб-сторінка містить інформацію про мене та моє навчання</p>
+                <p>Ви можете перейти до інших пунктів задопомогою меню у верхній частині цієї сторінки</p>
+                <p>Повстяний Ілля</p>
+
+            </div>
+            
+        </div>
+    </main>
+</body>
+
+</html>
